@@ -66,6 +66,9 @@ $id = rand(11111, 99999);
     <?php foreach ($values as $key => $row): ?>
         <a href="<?= $row['image']?>">
             <img src="<?= $row['image']?>"  alt="<?= $row['alt'] ?>">
+            <div>
+                <span></span>
+            </div>
         </a>
     <?php endforeach; ?>
 </div>
