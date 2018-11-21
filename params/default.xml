@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="fieldparams" addfieldpath="/plugins/fields/radicalmultifield/fields">
+        <fieldset name="fieldparams">
+
+            <field
+                    name="template"
+                    default="_:default"
+            />
+
+            <field name="aview"
+                   default="repeatable-cards"
+            >
+            </field>
+
+            <field name="filesimport"
+                   default="1"
+            >
+            </field>
+
+            <field name="filesimportadmin"
+                   default="1"
+                   >
+            </field>
+
+            <field name="filesimportname"
+                   default="image"
+            />
+
+            <field name="filesimportnamefile"
+                   default="alt"
+            />
+
+            <field name="filesimportexc"
+                   default="gif,png,jpg,jpeg,xcf,bmp,svg"
+            />
+
+
+            <field name="filesimportpath"
+                   default="images/{day}-{month}-{year}"
+            />
+
+            <field name="filesimportmaxsize"
+                   default="10"
+            />
+
+
+            <field name="filesimportresize"
+                   default="1">
+            </field>
+
+            <field name="filesimportrezizemaxwidth"
+                   default="1980"
+            />
+
+            <field name="filesimportrezizemaxheight"
+                   default="1280"
+            />
+
+            <field name="filesimportrezizeoverlay"
+                   default="0"
+                   >
+            </field>
+
+            <field name="filesimportrezizeoverlayfile"
+                   default="images/joomla_black.png"
+            />
+
+            <field name="filesimportrezizeoverlaypos"
+                   default="topleft"
+            >
+            </field>
+
+            <field name="filesimportrezizeoverlaypadding"
+                   default="10"
+            />
+
+            <field name="listtype"
+                   default='{"listtype0":{"name":"alt","title":"\u041e\u043f\u0438\u0441\u0430\u043d\u0438\u0435 \u043a\u0430\u0440\u0442\u0438\u043d\u043a\u0438","type":"text","required":"0","listview":"list","multiple":"0","options":"","attrs":""},"listtype1":{"name":"image","title":"\u041a\u0430\u0440\u0442\u0438\u043d\u043a\u0430","type":"media","required":"0","listview":"list","multiple":"0","options":"","attrs":""}}'
+            />
+
+        </fieldset>
+    </fields>
+</form>

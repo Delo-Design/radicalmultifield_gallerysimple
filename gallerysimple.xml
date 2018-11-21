@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.9" group="radicalmultifield" method="upgrade">
+	<name>PLG_RADICALMILTIFIELDSGALLERYSIMPLE</name>
+	<creationDate>17.11.2018</creationDate>
+	<author>delo-design.ru</author>
+	<authorEmail>info@delo-design.ru</authorEmail>
+	<authorUrl>https://delo-design.ru</authorUrl>
+	<copyright>Copyright (C) 2018 "Delo Design". All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+	<version>1.0</version>
+	<description>PLG_RADICALMILTIFIELDGALLERYSIMPLE_XML_DESCRIPTION</description>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_radicalmultifield_gallerysimple.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_radicalmultifield_gallerysimple.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_radicalmultifield_gallerysimple.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_radicalmultifield_gallerysimple.sys.ini</language>
+	</languages>
+
+	<updateservers>
+		<server type="extension" priority="1" name="Radical MultiField gallery simple">
+			https://hika.su/update/free/radicalmultifield/plg_gallerysimple.xml
+		</server>
+	</updateservers>
+
+	<files>
+		<filename plugin="gallerysimple">LICENSE</filename>
+		<folder>radicalmultifield</folder>
+		<folder>language</folder>
+		<folder>params</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<media folder="media" destination="plg_radicalmultifield_gallerysimple">
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>fonts</folder>
+		<folder>img</folder>
+	</media>
+
+</extension>
