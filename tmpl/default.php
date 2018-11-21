@@ -22,22 +22,38 @@ $values = json_decode($field->value, JSON_OBJECT_AS_ARRAY);
 $listtype = $this->getListTypeFromField($field);
 
 
-HTMLHelper::stylesheet('plg_radicalmultifield_slideshowvertical/lightgallery.min.css', [
+HTMLHelper::stylesheet('plg_radicalmultifield_gallerysimple/gallerysimple.css', [
     'version' => filemtime ( __FILE__ ),
     'relative' => true,
 ]);
 
-HTMLHelper::stylesheet('plg_radicalmultifield_slideshowvertical/lg-fb-comment-box.min.css', [
+
+HTMLHelper::stylesheet('plg_radicalmultifield_gallerysimple/lightgallery.min.css', [
     'version' => filemtime ( __FILE__ ),
     'relative' => true,
 ]);
 
-HTMLHelper::stylesheet('plg_radicalmultifield_slideshowvertical/lg-transitions.min.css', [
+HTMLHelper::stylesheet('plg_radicalmultifield_gallerysimple/lg-fb-comment-box.min.css', [
     'version' => filemtime ( __FILE__ ),
     'relative' => true,
 ]);
 
-HTMLHelper::script('plg_radicalmultifield_slideshowvertical/lightgallery.min.js', [
+HTMLHelper::stylesheet('plg_radicalmultifield_gallerysimple/lg-transitions.min.css', [
+    'version' => filemtime ( __FILE__ ),
+    'relative' => true,
+]);
+
+HTMLHelper::script('plg_radicalmultifield_gallerysimple/lightgallery.min.js', [
+    'version' => filemtime ( __FILE__ ),
+    'relative' => true,
+]);
+
+HTMLHelper::script('plg_radicalmultifield_gallerysimple/lg-zoom.min.js', [
+    'version' => filemtime ( __FILE__ ),
+    'relative' => true,
+]);
+
+HTMLHelper::script('plg_radicalmultifield_gallerysimple/lg-thumbnail.min.js', [
     'version' => filemtime ( __FILE__ ),
     'relative' => true,
 ]);
@@ -46,7 +62,7 @@ $id = rand(11111, 99999);
 ?>
 
 
-<div id="lightgallery-<?= $id ?>">
+<div class="gallerysimple" id="lightgallery-<?= $id ?>">
     <?php foreach ($values as $key => $row): ?>
         <a href="<?= $row['image']?>">
             <img src="<?= $row['image']?>"  alt="<?= $row['alt'] ?>">
@@ -57,7 +73,9 @@ $id = rand(11111, 99999);
 <script type="text/javascript">
     lightGallery(document.getElementById('lightgallery-<?= $id ?>'), {
         thumbnail:true,
-        animateThumb: false,
-        showThumbByDefault: false
+        animateThumb: true,
+        showThumbByDefault: true,
+        mode: 'lg-fade',
+        cssEasing : 'cubic-bezier(0.25, 0, 0.25, 1)'
     });
 </script>
