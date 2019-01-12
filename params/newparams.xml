@@ -1,0 +1,15 @@
+<field name="gallerysimplepreviewmaxwidth"
+       type="text"
+       label="PLG_RADICALMILTIFIELDGALLERYSIMPLE_THUMB_WIDTH_MAX_LABEL"
+       required="true"
+       default="600"
+       class="input-xlarge"
+/>
+
+<field name="gallerysimplepreviewmaxheight"
+       type="text"
+       label="PLG_RADICALMILTIFIELDGALLERYSIMPLE_THUMB_HEIGHT_MAX_LABEL"
+       required="true"
+       default="600"
+       class="input-xlarge"
+/>

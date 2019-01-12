@@ -58,6 +58,12 @@ HTMLHelper::script('plg_radicalmultifield_gallerysimple/lg-thumbnail.min.js', [
     'relative' => true,
 ]);
 
+JLoader::register(
+    'JFormFieldRadicalmultifield_gallerysimple',
+    JPATH_ROOT . DIRECTORY_SEPARATOR . implode(DIRECTORY_SEPARATOR, ['plugins', 'radicalmultifield', 'gallerysimple', 'radicalmultifield', 'gallerysimple']) . '.php'
+);
+
+
 $id = rand(11111, 99999);
 ?>
 
@@ -65,7 +71,7 @@ $id = rand(11111, 99999);
 <div class="gallerysimple" id="lightgallery-<?= $id ?>">
     <?php foreach ($values as $key => $row): ?>
         <a href="<?= $row['image']?>">
-            <img src="<?= $row['image']?>"  alt="<?= $row['alt'] ?>">
+            <img src="<?= JFormFieldRadicalmultifield_gallerysimple::generateThumb($field, $row['image'])?>"  alt="<?= $row['alt'] ?>">
             <div>
                 <span></span>
             </div>
