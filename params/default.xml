@@ -57,6 +57,19 @@
                    default="1280"
             />
 
+
+            <field name="filesimportpreview"
+                   default="1">
+            </field>
+
+            <field name="filesimportpreviewmaxwidth"
+                   default="360"
+            />
+
+            <field name="filesimportpreviewmaxheight"
+                   default="360"
+            />
+
             <field name="filesimportrezizeoverlay"
                    default="0"
                    >
